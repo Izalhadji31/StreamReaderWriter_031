@@ -21,5 +21,13 @@ int main() {
 
 		outfile << baris << endl;
 	}
-	outfile.close();
+
+	outfile.close()
+
+	/*Read*/
+
+	ifstream infile;
+	infile.open("ContohFile.txt");
+
+	cout << endl << ">= Membuka dan membaca file" << endl;
 }
