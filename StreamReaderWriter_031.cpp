@@ -1,15 +1,16 @@
 #include <iostream>
 #include <fstream>
 #include <string>
-
 using namespace std;
 
 int main() {
 	string baris;
+
+	/*write*/
+
 	ofstream outfile;
 	//open file
 	outfile.open("ContohFile.txt");
-
 
 	cout << ">= Menulis file, \'q\' untuk keluar" << endl;
 
@@ -22,7 +23,7 @@ int main() {
 		outfile << baris << endl;
 	}
 
-	outfile.close()
+	outfile.close();
 
 	/*Read*/
 
@@ -32,7 +33,6 @@ int main() {
 	cout << endl << ">= Membuka dan membaca file" << endl;
 
 	if (infile.is_open()) {
-
 		while (getline(infile, baris)) {
 			cout << baris << '\n';
 		}
