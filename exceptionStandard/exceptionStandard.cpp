@@ -12,3 +12,4 @@ int main() {
 	catch (exception& e) {
 		cout << e.what() << endl;/*menampilkan eror dari try*/
 	}
+	cout << "Baris program terakhir" << endl;
