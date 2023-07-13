@@ -7,3 +7,7 @@ int main() {
         throw 0.5; // lempar value untuk di eksekusi oleh catch
         cout << "Pernyataan todak di eksekusi" << endl;
     }
+    catch (int a) {
+        //jika throw int
+        cout << "Pengecualian akan dieksekusi" << endl;
+    }
