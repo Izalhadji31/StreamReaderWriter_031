@@ -13,4 +13,6 @@ int main() {
 
 	ofstream outfile;
 	//open file
-	outfile.open(namafile + ".txt", ios::out);
+	outfile.open(namafile + ".txt", ios::out)
+
+		cout << ">= Menulis file, \'q\' untuk keluar" << endl;
