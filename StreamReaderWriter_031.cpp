@@ -33,6 +33,9 @@ int main() {
 
 	if (infile.is_open()) {
 
+		while (getline(infile, baris)) {
+			cout << baris << '\n';
+		}
 	}
 	else cout << "unable to open file";
 	return 0;
