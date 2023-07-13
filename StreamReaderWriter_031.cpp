@@ -5,6 +5,8 @@
 using namespace std;
 
 int main() {
-
 	string baris;
+	ofstream outfile;
+	//open file
+	outfile.open("ContohFile.txt");
 }
