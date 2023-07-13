@@ -13,3 +13,4 @@ int main() {
 		cout << e.what() << endl;/*menampilkan eror dari try*/
 	}
 	cout << "Baris program terakhir" << endl;
+	return 0;
