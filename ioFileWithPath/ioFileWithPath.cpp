@@ -26,4 +26,11 @@ int main() {
 		outfile << baris << endl;
 
 		outfile.close();
+
+		*Read* /
+
+			ifstream infile;
+		infile.open(namafile + ".txt", ios::in);
+
+		cout << endl << ">= Membuka dan membaca file" << endl;
 	}
