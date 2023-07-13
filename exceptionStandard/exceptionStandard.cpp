@@ -10,3 +10,5 @@ int main() {
 		cout << data.at(5) << endl; /*menampilkan array*/
 	}
 	catch (exception& e) {
+		cout << e.what() << endl;/*menampilkan eror dari try*/
+	}
