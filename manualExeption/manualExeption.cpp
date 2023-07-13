@@ -15,3 +15,4 @@ int main() {
         //selain int
         cout << "Default pengecualian dieksekusi" << endl;
     }
+    return 0;
