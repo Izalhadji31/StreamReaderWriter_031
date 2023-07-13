@@ -5,3 +5,8 @@ using namespace std;
 
 int main() {
 	string baris, namafile;
+
+	/*write*/
+
+	cout << "masukan nama filennya:";
+	cin >> namafile;
