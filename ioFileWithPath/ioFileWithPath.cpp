@@ -13,9 +13,9 @@ int main() {
 
 	ofstream outfile;
 	//open file
-	outfile.open(namafile + ".txt", ios::out)
+	outfile.open(namafile + ".txt", ios::out);
 
-		cout << ">= Menulis file, \'q\' untuk keluar" << endl;
+	cout << ">= Menulis file, \'q\' untuk keluar" << endl;
 
 	while (true) {
 		cout << "- ";
@@ -24,22 +24,23 @@ int main() {
 		if (baris == "q")break;
 
 		outfile << baris << endl;
-
-		outfile.close();
-
-		*Read* /
-
-			ifstream infile;
-		infile.open(namafile + ".txt", ios::in);
-
-		cout << endl << ">= Membuka dan membaca file" << endl;
-
-		if (infile.is_open()) {
-			while (getline(infile, baris)) {
-				cout << baris << '\n';
-			}
-			infile.close();
-		}
-		else cout << "unable to open file";
-		return 0;
 	}
+
+	outfile.close();
+
+	/*Read*/
+
+	ifstream infile;
+	infile.open(namafile + ".txt", ios::in);
+
+	cout << endl << ">= Membuka dan membaca file" << endl;
+
+	if (infile.is_open()) {
+		while (getline(infile, baris)) {
+			cout << baris << '\n';
+		}
+		infile.close();
+	}
+	else cout << "unable to open file";
+	return 0;
+}
