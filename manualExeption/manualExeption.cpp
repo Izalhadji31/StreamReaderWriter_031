@@ -11,3 +11,7 @@ int main() {
         //jika throw int
         cout << "Pengecualian akan dieksekusi" << endl;
     }
+    catch (...) {
+        //selain int
+        cout << "Default pengecualian dieksekusi" << endl;
+    }
